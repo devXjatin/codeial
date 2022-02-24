@@ -37,6 +37,7 @@ function Register () {
         uid: result.user.uid,
         name,
         email,
+        
         createdAt: Timestamp.fromDate(new Date()),
         isOnline: true,
       });
