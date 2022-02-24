@@ -52,7 +52,6 @@ function Register () {
       setData({ ...data, error: err.message, loading: false });
     }
   };
-  
   return (
     <section>
       <h3>Create An Account</h3>
