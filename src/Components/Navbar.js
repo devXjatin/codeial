@@ -1,17 +1,37 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-const Navbar = () => {
+import React from "react";
+import { Link } from "react-router-dom";
+import { auth,db } from "../Firebase";
+import { signOut } from "firebase/auth";
+import { updateDoc, doc } from "firebase/firestore";
+function Navbar() {
+
+  async function handleSignout(){
+    await updateDoc(doc(db, 'users', auth.currentUser.uid),{
+      isOnline:false
+    })
+    await signOut(auth);
+  }
+
   return (
     <nav>
-        <h3>
+      <h3>
         <Link to="/">Messenger</Link>
-        </h3>
-        <div>
+      </h3>
+      <div>
+        {auth.currentUser ? (
+          <>
+            <Link to="/profile">Profile</Link>
+            <button className="btn" onClick={handleSignout}>Logout</button>
+          </>
+        ) : (
+          <>
             <Link to="/register">Register</Link>
             <Link to="/login">Login</Link>
-        </div>
+          </>
+        )}
+      </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
