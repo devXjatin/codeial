@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/codeial/static/css/main.1cdd6e6a.css",
-    "main.js": "/codeial/static/js/main.e163edd0.js",
+    "main.js": "/codeial/static/js/main.d71b8bea.js",
     "index.html": "/codeial/index.html",
     "main.1cdd6e6a.css.map": "/codeial/static/css/main.1cdd6e6a.css.map",
-    "main.e163edd0.js.map": "/codeial/static/js/main.e163edd0.js.map"
+    "main.d71b8bea.js.map": "/codeial/static/js/main.d71b8bea.js.map"
   },
   "entrypoints": [
     "static/css/main.1cdd6e6a.css",
-    "static/js/main.e163edd0.js"
+    "static/js/main.d71b8bea.js"
   ]
 }
