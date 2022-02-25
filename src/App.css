@@ -162,6 +162,7 @@
     height: 50px;
     border-radius: 50%;
     border: 1px solid var(--color-4);
+    border-radius: border-box;
   }
   .user_status {
     width: 10px;
