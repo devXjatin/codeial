@@ -16,7 +16,7 @@ const {user} = useContext(AuthContext);
   return (
     <nav>
       <h3>
-        <Link to="/">Messenger</Link>
+        <Link to="/">Code!al</Link>
       </h3>
       <div>
         {user ? (
